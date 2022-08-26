@@ -1,0 +1,6 @@
+.newTask-col{
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 0px;
+    grid-area: 1/1/2/2;
+}

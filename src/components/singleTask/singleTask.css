@@ -1,0 +1,22 @@
+.task{
+    width: 260px;
+    background-color:#FFFDE3;
+    display: grid;
+    align-items: center;
+    word-break: break-all;
+    padding: 0px 10px 0px 10px;
+}
+.task-and-buttons{
+    display: flex;
+    margin-bottom: 10px;
+    text-align: center;
+    min-height: 40px;
+}
+.done{
+    border-radius: 0 20% 20% 0;
+}
+.delete{
+    border-radius: 20% 0 0 20%;
+    background-color: #C21010;
+}
+
