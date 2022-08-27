@@ -4,3 +4,9 @@
     margin-bottom: 0px;
     grid-area: 1/1/2/2;
 }
+.fa-plus {
+    font-size: 1.6rem;
+}
+.add-btn{
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}

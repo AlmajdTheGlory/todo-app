@@ -7,11 +7,13 @@ import {
 } from 'reactstrap';
 
 
-
-const NewTask = () => {
+const NewTask = (props) => {
+    const handleSubmit = (values) => {
+        props.addTask(values.newTask)
+    }
     return (
         <div className='NewTask'>
-            <LocalForm className='container-fluid'>
+            <LocalForm onSubmit={(values) => handleSubmit(values)} className='container-fluid'>
                 <Row className="form-group justify-content-center">
                     <Label htmlFor="newTask" md={12}></Label>
                     <Col md={3} className="newTask-col">
@@ -20,7 +22,7 @@ const NewTask = () => {
                             className="form-control"
                             validators={{}}
                         />
-                        <button className='btn btn-primary'>+</button>
+                        <button className='add-btn btn btn-primary'><i className="fa fa-solid fa-plus"></i></button>
                         <Errors
                             className="text-danger"
                             model=".newTask"

@@ -1,10 +1,10 @@
 import React from 'react';
 import { legacy_createStore as createStore } from 'redux'
-import { addTask } from './actionCreators';
+import { tasks } from './tasks';
 
 
 export const ConfigureStore = () => {
-    const store = createStore(addTask, ["tasl 1", "task 2", "task 3fffffffffffffffffffffffffffffffffffffffffffffffffffffffff"]);
+    const store = createStore(tasks, []);
 
     return store;
 }
